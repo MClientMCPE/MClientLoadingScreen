@@ -15,6 +15,13 @@
     h2{
         margin-top: 8px;
     }
+    h3{
+        margin-top: 12px;
+    }
+      a {
+        color: red;
+        text-decoration: none !important;
+      }
       .hydroflame521 {
            border: 16px solid white;
            border-radius: 50%;
@@ -35,6 +42,10 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <center>
          <body>
     <h1>
@@ -44,9 +55,25 @@ Initializing MClient...
 Do not close this window while it is loading. 
 Please go to <a href = "https://mclient.tk">Mclient.tk</a> for more information.
       </h2>
+           <div class="row-outer">
+      <div class="container">
+        <div class="animated-heading">
+          <h3><span id="words">Injecting [0%]</span></h3>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        var words = ["Injecting [0%]","Injecting [10%]","Injecting [20%]","Injecting [30%]","Injecting [40%]","Injecting [50%]","Injecting [60%]","Injecting [70%]","Injecting [80%]","Injecting [90%]","Injecting [100%]","Injecting [100%]"],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 2000)
+      })();
+    </script>
   <div class="hydroflame521"></div>
     <script>
-window.setTimeout(function(){ window.close(); }, 8000);
+window.setTimeout(function(){ window.close(); }, 22000);
     </script>
           </body>
     </center>
